@@ -1,0 +1,1 @@
+An onboarding project of a single page which features a sign-up process to join a project, email list, software beta test, or an open-source community.
