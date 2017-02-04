@@ -15,6 +15,14 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     others (check documentation)
 }*/
 
+/*
+Setting type to major second modular scale
+http://www.modularscale.com/?18&px&1.125&web&text
+*/
+html {
+/*  font-size: 1.125em  /* 18 px */
+  /*line-height: 1.2em  /* 21.6px */*/*/
+}
 
 /* ===== LAYOUT STYLES ===== */
 /* Horizontal Layout #id selectors
