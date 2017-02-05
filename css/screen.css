@@ -20,8 +20,12 @@ Setting type to major second modular scale
 http://www.modularscale.com/?18&px&1.125&web&text
 */
 html {
-/*  font-size: 1.125em  /* 18 px */
-  /*line-height: 1.2em  /* 21.6px */*/*/
+  font-size: 1.125em;  /* 18 px */
+  line-height: 1.22222222em;  /* 21.6px  */
+  padding: 1em; /* 18px */
+  background-color: #006600;
+  color: #66FFFF;
+  margin: 0 2.5% 0 5%;
 }
 
 /* ===== LAYOUT STYLES ===== */
