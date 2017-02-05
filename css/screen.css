@@ -77,4 +77,12 @@ form li {
 
 
 /* ===== STATE STYLES ===== */
-/* media queries, state ex. nojs (has is (isActive, Inactive)) /*
+/* media queries, state ex. nojs (has is (isActive, Inactive)) */
+.hasjs input[type="submit"] {
+  position: absolute;
+  left: -100000px;
+}
+
+.hasjs input[type="submit"].active {
+  position: static;
+}
