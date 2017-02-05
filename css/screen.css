@@ -30,8 +30,8 @@ html {
 
 h1 {
   font-size: 1.25em; /* 22.5 px */
-  line-height: 2.4em /* 42 px */
-  padding: .5em;
+  line-height: 2.4em; /* 42 px */
+  padding: 0.5em;
 }
 
 p {
@@ -41,14 +41,14 @@ p {
 /* ===== Responsive Media ====*/
 img, audio, video {
   display: block;
-  max-width: 100%
+  max-width: 100%;
 }
 
 /* ===== FORM ===== */
 label,
 input {
   box-sizing: border-box;
-  width: 100%
+  width: 100%;
   display: block;
   font-family: inherit;
   font-size: inherit;
@@ -59,10 +59,11 @@ input {
   background-color: yellow;
 }
 
-/*input[type="email"] {
-  border: 0;*/
-  /*background-color: red*/
-/*}*/
+input[type="email"] {
+  border: 0;
+  background-color: red;
+}
+
 /* ===== LAYOUT STYLES ===== */
 /* Horizontal Layout #id selectors
     display, ex float; clear; position; right, left; top, bottom;
