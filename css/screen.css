@@ -34,6 +34,26 @@ h1 {
   padding: .5em;
 }
 
+
+/* ===== Responsive Media ====*/
+img, audio, video {
+  display: block;
+  max-width: 100%
+}
+
+/* ===== FORM ===== */
+label,
+input {
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input[type="email"] {
+  border: 0;
+  /*background-color: red*/
+}
 /* ===== LAYOUT STYLES ===== */
 /* Horizontal Layout #id selectors
     display, ex float; clear; position; right, left; top, bottom;
