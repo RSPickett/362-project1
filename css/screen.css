@@ -34,6 +34,9 @@ h1 {
   padding: .5em;
 }
 
+p {
+  padding-bottom: 1em /* 16 px */
+}
 
 /* ===== Responsive Media ====*/
 img, audio, video {
@@ -44,16 +47,22 @@ img, audio, video {
 /* ===== FORM ===== */
 label,
 input {
+  box-sizing: border-box;
+  width: 100%
   display: block;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: yellow;
 }
 
-input[type="email"] {
-  border: 0;
+/*input[type="email"] {
+  border: 0;*/
   /*background-color: red*/
-}
+/*}*/
 /* ===== LAYOUT STYLES ===== */
 /* Horizontal Layout #id selectors
     display, ex float; clear; position; right, left; top, bottom;
@@ -62,6 +71,9 @@ input[type="email"] {
 
 /* ===== MODULAR STYLES ===== */
 /* examples: rounded corners, red background, shadow, usually class selectors */
+form li {
+  margin-bottom: 1em;
+}
 
 
 /* ===== STATE STYLES ===== */
