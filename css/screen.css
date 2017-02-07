@@ -48,6 +48,7 @@ p {
 /* ===== Responsive Media ====*/
 img, audio, video {
   display: block;
+  padding-bottom: 1em; /* 36px */
   max-width: 100%;
 }
 
