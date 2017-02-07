@@ -23,15 +23,15 @@ html {
   font-size: 1em;  /* 16 px */
   line-height: 1.2em;  /* 19.2px  */
   padding: 1em; /* 16px */
-  background-color: #006600;
-  color: #66FFFF;
+  background-color: #003300;
+  color: #CC6600;
   margin: 0 2.5% 0 5%;
 }
 
 h1 {
   font-size: 1.25em; /* 22.5 px */
-  line-height: 2.4em; /* 42 px */
-  padding: 0.5em;
+  line-height: 2.5em; /* 42 px */
+  /*padding: 0.5em;*/
 }
 
 p {
@@ -56,12 +56,12 @@ input {
   border: 0;
   margin: 0;
   padding: 0;
-  background-color: yellow;
+/*  background-color: yellow;*/
 }
 
 input[type="email"] {
-  border: 0;
-  background-color: red;
+  border: 1em;
+  /*background-color: red;*/
 }
 
 /* ===== LAYOUT STYLES ===== */
