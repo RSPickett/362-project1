@@ -20,6 +20,7 @@ Setting type to major second modular scale
 http://www.modularscale.com/?18&px&1.125&web&text
 */
 html {
+
   font-size: 1em;  /* 16 px */
   line-height: 1.5em;  /* 24px  */
   padding: 1em; /* 16px */
@@ -28,11 +29,15 @@ html {
   margin: 0 2.5% 0 5%;
 }
 
+body {
+    font-family: Laksaman, sans-serif;
+    font-weight: bold;
+}
+
 h1 {
   font-size: 1.5em; /* 32 px */
   line-height: 1.2em; /* 38.4 px */
   text-align: center;
-  /*padding: 0.5em;*/
 }
 
 h2,
@@ -61,15 +66,10 @@ input {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  border: 0;
-  margin: 0;
-  padding: 0;
-/*  background-color: yellow;*/
 }
 
 input[type="email"] {
   border: 1em;
-  /*background-color: red;*/
 }
 
 /* ===== LAYOUT STYLES ===== */
@@ -87,14 +87,7 @@ form li {
 
 /* ===== STATE STYLES ===== */
 /* media queries, state ex. nojs (has is (isActive, Inactive)) */
-.hasjs input[type="submit"] {
-  position: absolute;
-  left: -100000px;
-}
 
-.hasjs input[type="submit"].active {
-  position: static;
-}
 
 /* 340 @ 16px/em (21.25em) */
 @media screen and (min-width: 21.25em) {
