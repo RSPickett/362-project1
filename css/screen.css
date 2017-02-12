@@ -47,6 +47,29 @@ h4 {
 }
 
 
+#river-info,
+.day {
+  display: block;
+  margin-top: 1em;
+}
+
+.day,
+.river-name {
+  float: left;
+  margin-right: 1em;
+  margin-top: 0.5em;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.river-location {
+  clear: both;
+}
+
+.river-description {
+  margin-top: 0.5em;
+}
+
+
 /* ===== Responsive Media ====*/
 /*img, audio, video {*/
 /*  display: block;
@@ -70,6 +93,7 @@ img {
   border-style: solid;
   max-height: auto;
   vertical-align: bottom;
+}
 
 /* ===== FORM ===== */
 label,
@@ -104,6 +128,6 @@ form li {
 
 
 /* 340 @ 16px/em (21.25em) */
-/*@media screen and (min-width: 21.25em) {
+@media screen and (min-width: 21.25em) {
 
-}*/
+}
