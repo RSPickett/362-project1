@@ -26,12 +26,12 @@ html {
   padding: 1em; /* 16px */
   background-color: #003300;
   color: #CC6600;
-  margin: 0 2.5% 0 5%;
+  margin: 0 5% 0 5%;
 }
 
 body {
-    font-family: Laksaman, sans-serif;
-    font-weight: bold;
+  font-family: Laksaman, sans-serif;
+  font-weight: bold;
 }
 
 h1 {
@@ -46,16 +46,30 @@ h4 {
   text-align: center;
 }
 
-p {
-  padding-bottom: 1em /* 16 px */
-}
 
 /* ===== Responsive Media ====*/
-img, audio, video {
-  display: block;
-  padding-bottom: 1em; /* 36px */
+/*img, audio, video {*/
+/*  display: block;
+  border: 20em;
+  padding: 1em; /* 36px */
+/*max-width: 15%;*/*/
+/*}*/
+
+img {
+  max-height: 100%;
   max-width: 100%;
+  /*display: block;*/
+  /*vertical-align: center;*/
+  size: 10vw;
 }
+
+.river {
+  display: block;
+  border: thin;
+  border-color: #CC6600;
+  border-style: solid;
+  max-height: auto;
+  vertical-align: bottom;
 
 /* ===== FORM ===== */
 label,
@@ -90,6 +104,6 @@ form li {
 
 
 /* 340 @ 16px/em (21.25em) */
-@media screen and (min-width: 21.25em) {
+/*@media screen and (min-width: 21.25em) {
 
-}
+}*/
