@@ -66,6 +66,8 @@ h4 {
 }
 
 .river-description {
+  display: none;
+  clear: both;
   margin-top: 0.5em;
 }
 
@@ -75,7 +77,7 @@ h4 {
 /*  display: block;
   border: 20em;
   padding: 1em; /* 36px */
-/*max-width: 15%;*/*/
+/*max-width: 15%;*/
 /*}*/
 
 img {
@@ -83,7 +85,7 @@ img {
   max-width: 100%;
   /*display: block;*/
   /*vertical-align: center;*/
-  size: 10vw;
+  /*size: 10vw;*/
 }
 
 .river {
@@ -91,7 +93,7 @@ img {
   border: thin;
   border-color: #CC6600;
   border-style: solid;
-  max-height: auto;
+  /*max-height: auto;*/
   vertical-align: bottom;
 }
 
