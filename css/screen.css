@@ -20,56 +20,81 @@ Setting type to major second modular scale
 http://www.modularscale.com/?18&px&1.125&web&text
 */
 html {
-
-  font-size: 1em;  /* 16 px */
-  line-height: 1.5em;  /* 24px  */
-  padding: 1em; /* 16px */
+  font-size: 1.125em;  /* 18px */
+  line-height: 1.22222em;  /* 21.6px  */
   background-color: #003300;
   color: #CC6600;
-  margin: 0 5% 0 5%;
 }
 
 body {
-  font-family: Laksaman, sans-serif;
-  font-weight: bold;
+  font-family: Laksaman, Dosis, "Josefin Sans", sans-serif;
 }
 
-h1 {
-  font-size: 1.5em; /* 32 px */
-  line-height: 1.2em; /* 38.4 px */
+#river-image img {
+  height: auto;
+}
+
+li[id^="input"] {
+  margin-bottom: 1em;
+}
+
+#dates {
   text-align: center;
 }
 
-h2,
-h3,
-h4 {
+#headlines {
+  display: block;
+  list-style-type: none;
   text-align: center;
+  font-size: 1.5em;
+  line-height: 1.2em;
 }
 
 
-#river-info,
+/*river description styling*/
+.river-info,
 .day {
   display: block;
   margin-top: 1em;
 }
+.river-definition {
+  clear: left;
+}
 
 .day,
-.river-name {
+.river-name,
+.river-definition {
   float: left;
   margin-right: 1em;
   margin-top: 0.5em;
-  font-family: 'Archivo Black', sans-serif;
-}
-
-.river-location {
-  clear: both;
 }
 
 .river-description {
   display: none;
+  margin-top: 0.5em;
+  color: #D47D00;
+  margin-left: 1em;
+}
+.river-location,
+.river-description {
+  clear: both;
+}
+
+.river-link {
+  margin-top: .5em;
+  align-content: left;
+}
+.citation,
+.river-link {
+  clear: both;
+}
+
+/*.river-description {
+  display: none;
   clear: both;
   margin-top: 0.5em;
-}
+  color: #D98C00;
+}*/
 
 
 /* ===== Responsive Media ====*/
@@ -80,37 +105,8 @@ h4 {
 /*max-width: 15%;*/
 /*}*/
 
-img {
-  max-height: 100%;
-  max-width: 100%;
-  /*display: block;*/
-  /*vertical-align: center;*/
-  /*size: 10vw;*/
-}
 
-.river {
-  display: block;
-  border: thin;
-  border-color: #CC6600;
-  border-style: solid;
-  /*max-height: auto;*/
-  vertical-align: bottom;
-}
 
-/* ===== FORM ===== */
-label,
-input {
-  box-sizing: border-box;
-  width: 100%;
-  display: block;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-}
-
-input[type="email"] {
-  border: 1em;
-}
 
 /* ===== LAYOUT STYLES ===== */
 /* Horizontal Layout #id selectors
@@ -120,9 +116,9 @@ input[type="email"] {
 
 /* ===== MODULAR STYLES ===== */
 /* examples: rounded corners, red background, shadow, usually class selectors */
-form li {
+/*form li {
   margin-bottom: 1em;
-}
+}*/
 
 
 /* ===== STATE STYLES ===== */
