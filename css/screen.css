@@ -52,11 +52,16 @@ li[id^="input"] {
 
 
 /*river description styling*/
+.river-sections {
+  display: block;
+}
+
 .river-info,
 .day {
   display: block;
   margin-top: 1em;
 }
+
 .river-definition {
   clear: left;
 }
@@ -75,20 +80,37 @@ li[id^="input"] {
   color: #D47D00;
   margin-left: 1em;
 }
+
 .river-location,
 .river-description {
   clear: both;
 }
 
 .river-link {
-  margin-top: .5em;
+  margin-top: 1.0em;
   align-content: left;
 }
-.citation,
+
 .river-link {
-  clear: both;
+  text-decoration-color: yellow;
+
 }
 
+.citation {
+  clear: both;
+  margin-top: 4.0em;
+}
+
+.jamba {
+  align-content: left;
+}
+
+a:link {
+  color: #DB9400;
+}
+a:visited {
+  color: #DB9400;
+}
 /*.river-description {
   display: none;
   clear: both;
