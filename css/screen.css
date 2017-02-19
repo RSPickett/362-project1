@@ -17,11 +17,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /*
 Setting type to major second modular scale
-http://www.modularscale.com/?18&px&1.125&web&text
+http://www.modularscale.com/?16&px&1.125&web&text
 */
 html {
-  font-size: 1.125em;  /* 18px */
-  line-height: 1.22222em;  /* 21.6px  */
+  font-size: 1em;  /* 16px */
+  line-height: 1.5em;  /* 20px  */
   background-color: #003300;
   color: #CC6600;
 }
@@ -30,30 +30,75 @@ body {
   font-family: Laksaman, Dosis, "Josefin Sans", sans-serif;
 }
 
+main {
+  margin: 1.0em;
+}
+
+label {
+  align-items: center;
+}
+
 #river-image img {
   height: auto;
-}
-
-li[id^="input"] {
-  margin-bottom: 1em;
-}
-
-#dates {
-  text-align: center;
 }
 
 #headlines {
   display: block;
   list-style-type: none;
   text-align: center;
-  font-size: 1.5em;
-  line-height: 1.2em;
+  font-size: 1.5em; /* 24px = 2.5 * 16px */
+  line-height: 1.5em; /* 36px = 24px * 1.5 */
+}
+
+.headline-4 {
+  font-size: .75em; /* 18px = 24px * .75 */
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+/*  Form base styles */
+
+label,
+input {
+
+  box-sizing: border-box;
+/*  margin-left: 2.5%;
+  margin-right: 2.5%;*/
+  width: 100%;
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: bold;
+  text-align: center;
+}
+
+li[id^="input"] {
+  margin-bottom: 1em;
+
+}
+
+/* end of form base styles */
+
+#dates {
+  text-align: center;
+  font-weight: bold;
+}
+
+#days {
+  font-size: 1.25em;
 }
 
 
 /*river description styling*/
 .river-sections {
   display: block;
+}
+
+.day,
+.river-name,
+.river-location {
+  font-weight: bold;
 }
 
 .river-info,
@@ -76,7 +121,7 @@ li[id^="input"] {
 
 .river-description {
   display: none;
-  margin-top: 0.5em;
+  margin-top: 0.75em;
   color: #D47D00;
   margin-left: 1em;
 }
@@ -98,11 +143,9 @@ li[id^="input"] {
 
 .citation {
   clear: both;
-  margin-top: 4.0em;
-}
-
-.jamba {
-  align-content: left;
+  margin-top: 2em;
+  font-size: .75em;
+  font-weight: lighter;
 }
 
 a:link {
@@ -111,12 +154,6 @@ a:link {
 a:visited {
   color: #DB9400;
 }
-/*.river-description {
-  display: none;
-  clear: both;
-  margin-top: 0.5em;
-  color: #D98C00;
-}*/
 
 
 /* ===== Responsive Media ====*/
@@ -147,7 +184,38 @@ a:visited {
 /* media queries, state ex. nojs (has is (isActive, Inactive)) */
 
 
-/* 340 @ 16px/em (21.25em) */
-@media screen and (min-width: 21.25em) {
+/* 450 @ 16px/em (28.125em) */
+@media screen and (min-width: 28.125em) {
+
+  #headlines {
+    font-size: 1.5em; /* 24px = 2.5 * 16px */
+    line-height: 1.5em; /* 36px = 24px * 1.5 */
+  }
+
+    label,
+    input {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    width: 75%;
+  }
+
+}
+
+/* 1000 @ 16px/em (62.5em) */
+@media screen and (min-width: 62.5em) {
+
+  label,
+  input {
+    /*width: 75%*/;
+    border-right: 30%;
+    border-left: 30%;
+
+  }
+
+  #headlines {
+    font-size: 1.5em; /* 24px = 2.5 * 16px */
+    line-height: 1.5em; /* 36px = 24px * 1.5 */
+  }
+
 
 }
