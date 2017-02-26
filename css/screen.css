@@ -21,9 +21,9 @@ http://www.modularscale.com/?16&px&1.125&web&text
 */
 html {
   font-size: 1em;  /* 16px */
-  line-height: 1.5em;  /* 20px  */
+  line-height: 1.5em;  /* 24px  */
   background-color: #003300;
-  color: #CC6600;
+  color: #996633; /* #CC6600; */
 }
 
 #content {
@@ -120,6 +120,11 @@ li[id^="input"] {
   clear: left;
 }
 
+
+.river-definition:hover {
+  color: #CC9966;
+}
+
 .day,
 .river-name,
 .river-definition {
@@ -131,7 +136,7 @@ li[id^="input"] {
 .river-description {
   display: none;
   margin-top: 0.75em;
-  color: #D47D00;
+  color:  #9999CC; /* #D47D00; */
   margin-left: 1em;
 }
 
