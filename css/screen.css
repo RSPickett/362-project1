@@ -35,7 +35,8 @@ html {
 }
 
 body {
-  font-family: Laksaman, Dosis, "Josefin Sans", sans-serif;
+  /*font-family: Laksaman, Dosis, "Josefin Sans", sans-serif;*/
+  font-family: Capriola, Andika, Sansita, Lato, Tahoma, Verdana, Segoe, sans-serif;
 }
 
 main {
@@ -70,8 +71,6 @@ label,
 input {
 
   box-sizing: border-box;
-/*  margin-left: 2.5%;
-  margin-right: 2.5%;*/
   width: 100%;
   display: block;
   font-family: inherit;
@@ -86,7 +85,7 @@ input {
   color: #003300;
   border: 0;
   padding: 1.0em;
-  border-radius: 1em;
+  border-radius: 0.5em;
 }
 
 li[id^="input"] {
