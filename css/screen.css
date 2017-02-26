@@ -26,6 +26,14 @@ html {
   color: #CC6600;
 }
 
+#content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   font-family: Laksaman, Dosis, "Josefin Sans", sans-serif;
 }
@@ -91,6 +99,7 @@ li[id^="input"] {
 
 
 /*river description styling*/
+
 .river-sections {
   display: block;
 }
@@ -216,6 +225,4 @@ a:visited {
     font-size: 1.5em; /* 24px = 2.5 * 16px */
     line-height: 1.5em; /* 36px = 24px * 1.5 */
   }
-
-
 }
