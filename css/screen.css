@@ -142,12 +142,12 @@ li[id^="input"] {
   margin-top: 0.5em;
 }
 
-.for-background {
+/*.for-background {
   display: none;
-}
+}*/
 
 .river-description {
-  /*display: none;*/
+  display: none;
   margin-top: 0.75em;
   color:  #CC9966; /*#9999CC;  #D47D00; */
   margin-left: 1em;
