@@ -21,9 +21,17 @@ http://www.modularscale.com/?16&px&1.125&web&text
 */
 html {
   font-size: 1em;  /* 16px */
-  line-height: 1.5em;  /* 20px  */
+  line-height: 1.5em;  /* 24px  */
   background-color: #003300;
-  color: #CC6600;
+  color: #996633; /* #CC6600; */
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
@@ -73,9 +81,16 @@ input {
   text-align: center;
 }
 
+input {
+  background-color: #99CC99;
+  color: #003300;
+  border: 0;
+  padding: 1.0em;
+  border-radius: 1em;
+}
+
 li[id^="input"] {
   margin-bottom: 1em;
-
 }
 
 /* end of form base styles */
@@ -91,6 +106,7 @@ li[id^="input"] {
 
 
 /*river description styling*/
+
 .river-sections {
   display: block;
 }
@@ -111,6 +127,11 @@ li[id^="input"] {
   clear: left;
 }
 
+
+.river-definition:hover {
+  color: #CC9966;
+}
+
 .day,
 .river-name,
 .river-definition {
@@ -122,7 +143,7 @@ li[id^="input"] {
 .river-description {
   display: none;
   margin-top: 0.75em;
-  color: #D47D00;
+  color:  #CC9966; /*#9999CC;  #D47D00; */
   margin-left: 1em;
 }
 
@@ -201,12 +222,43 @@ a:visited {
 
 }
 
+/* 600 @ 16px/em (37.5em) */
+@media screen and (min-width: 37.5em) {
+  #river-sections {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+}
+
+/* 750 @ 16px/em (46.875em) */
+@media screen and (min-width: 46.875em) {
+  #river-sections {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+}
+
+/* 800 @ 16px/em (50em) */
+@media screen and (min-width: 50em) {
+  #river-sections {
+    margin-right: 12.5%;
+    margin-left: 12.5%;
+  }
+}
+
+/* 900 @ 16px/em (56.25em) */
+@media screen and (min-width: 56.25em) {
+  #river-sections {
+    margin-right: 16.666667%;
+    margin-left: 16.666667%;
+  }
+}
+
 /* 1000 @ 16px/em (62.5em) */
 @media screen and (min-width: 62.5em) {
 
   label,
   input {
-    /*width: 75%*/;
     border-right: 30%;
     border-left: 30%;
 
@@ -217,4 +269,79 @@ a:visited {
     line-height: 1.5em; /* 36px = 24px * 1.5 */
   }
 
+  #river-sections {
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+/* 1100 @ 16px/em (68.75em) */
+@media screen and (min-width: 68.75em) {
+  #river-sections {
+    margin-right: 22.727273%;
+    margin-left: 22.727273%;
+  }
+}
+
+/* 1200 @ 16px/em (75em) */
+@media screen and (min-width: 75em) {
+  #river-sections {
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+}
+
+/* 1300 @ 16px/em (81.25em) */
+@media screen and (min-width: 81.25em) {
+  #river-sections {
+    margin-right: 26.92308%;
+    margin-left: 26.92308%;
+  }
+}
+
+/* 1400 @ 16px/em (62.5em) */
+@media screen and (min-width: 62.5em) {
+  #river-sections {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+}
+
+/* 1500 @ 16px/em (62.5em) */
+@media screen and (min-width: 62.5em) {
+  #river-sections {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+}
+
+/* 1600 @ 16px/em (62.5em) */
+@media screen and (min-width: 62.5em) {
+  #river-sections {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+}
+
+/* 1700 @ 16px/em (62.5em) */
+@media screen and (min-width: 62.5em) {
+  #river-sections {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+}
+
+/* 1800 @ 16px/em (62.5em) */
+@media screen and (min-width: 62.5em) {
+  #river-sections {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+}
+
+/* 1900 @ 16px/em (62.5em) */
+@media screen and (min-width: 62.5em) {
+  #river-sections {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
 }
