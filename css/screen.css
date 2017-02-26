@@ -81,9 +81,16 @@ input {
   text-align: center;
 }
 
+input {
+  background-color: #99CC99;
+  color: #003300;
+  border: 0;
+  padding: 1.0em;
+  border-radius: 1em;
+}
+
 li[id^="input"] {
   margin-bottom: 1em;
-
 }
 
 /* end of form base styles */
@@ -136,7 +143,7 @@ li[id^="input"] {
 .river-description {
   display: none;
   margin-top: 0.75em;
-  color:  #9999CC; /* #D47D00; */
+  color:  #CC9966; /*#9999CC;  #D47D00; */
   margin-left: 1em;
 }
 
@@ -252,7 +259,6 @@ a:visited {
 
   label,
   input {
-    /*width: 75%*/;
     border-right: 30%;
     border-left: 30%;
 
@@ -266,5 +272,76 @@ a:visited {
   #river-sections {
     margin-right: 20%;
     margin-left: 20%;
+}
 
+/* 1100 @ 16px/em (68.75em) */
+@media screen and (min-width: 68.75em) {
+  #river-sections {
+    margin-right: 22.727273%;
+    margin-left: 22.727273%;
+  }
+}
+
+/* 1200 @ 16px/em (75em) */
+@media screen and (min-width: 75em) {
+  #river-sections {
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+}
+
+/* 1300 @ 16px/em (81.25em) */
+@media screen and (min-width: 81.25em) {
+  #river-sections {
+    margin-right: 26.92308%;
+    margin-left: 26.92308%;
+  }
+}
+
+/* 1400 @ 16px/em (62.5em) */
+@media screen and (min-width: 62.5em) {
+  #river-sections {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+}
+
+/* 1500 @ 16px/em (62.5em) */
+@media screen and (min-width: 62.5em) {
+  #river-sections {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+}
+
+/* 1600 @ 16px/em (62.5em) */
+@media screen and (min-width: 62.5em) {
+  #river-sections {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+}
+
+/* 1700 @ 16px/em (62.5em) */
+@media screen and (min-width: 62.5em) {
+  #river-sections {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+}
+
+/* 1800 @ 16px/em (62.5em) */
+@media screen and (min-width: 62.5em) {
+  #river-sections {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+}
+
+/* 1900 @ 16px/em (62.5em) */
+@media screen and (min-width: 62.5em) {
+  #river-sections {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
 }
