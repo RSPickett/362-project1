@@ -7,9 +7,10 @@ $(function () {
       $('html').addClass('hasjs');
     }
   );
+
   $('.river-definition').on('click', function (e) {
     e.preventDefault();
-    $(this).parent('.river-info').children('.for-background:visible').slideUp('slow');
+    $(this).parent('.river-info').children('.river-description:visible').slideUp('slow');
     $(this).nextUntil('.river-definition').filter(':not(:visible)').slideDown('slow');
   });
 });
