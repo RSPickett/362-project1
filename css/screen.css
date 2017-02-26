@@ -35,8 +35,7 @@ html {
 }
 
 body {
-  /*font-family: Laksaman, Dosis, "Josefin Sans", sans-serif;*/
-  font-family: Capriola, Andika, Sansita, Lato, Tahoma, Verdana, Segoe, sans-serif;
+  font-family: Andika, Sansita,  Tahoma, Verdana, Segoe, sans-serif;
 }
 
 main {
@@ -60,7 +59,11 @@ label {
 }
 
 .headline-4 {
-  font-size: .75em; /* 18px = 24px * .75 */
+  font-size: .75em;
+  font-weight: lighter;
+}
+.headline-5 {
+  font-size: 1.0em; /* 18px = 24px * .75 */
   font-weight: bold;
   margin-bottom: 1em;
 }
@@ -139,8 +142,12 @@ li[id^="input"] {
   margin-top: 0.5em;
 }
 
-.river-description {
+.for-background {
   display: none;
+}
+
+.river-description {
+  /*display: none;*/
   margin-top: 0.75em;
   color:  #CC9966; /*#9999CC;  #D47D00; */
   margin-left: 1em;
@@ -212,11 +219,11 @@ a:visited {
     line-height: 1.5em; /* 36px = 24px * 1.5 */
   }
 
-    label,
-    input {
-    margin-left: 12.5%;
-    margin-right: 12.5%;
-    width: 75%;
+  label,
+  input {
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  width: 75%;
   }
 
 }
@@ -263,10 +270,10 @@ a:visited {
 
   }
 
-  #headlines {
-    font-size: 1.5em; /* 24px = 2.5 * 16px */
-    line-height: 1.5em; /* 36px = 24px * 1.5 */
-  }
+  /*#headlines {*/
+    /*font-size: 1.5em;*/ /* 24px = 2.5 * 16px */
+    /*line-height: 1.5em; *//* 36px = 24px * 1.5 */
+  /*}*/
 
   #river-sections {
     margin-right: 20%;
