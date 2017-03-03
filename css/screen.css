@@ -23,7 +23,7 @@ html {
   font-size: 1em;  /* 16px */
   line-height: 1.5em;  /* 24px  */
   background-color: #003300;
-  color: #996633; /* #CC6600; */
+  color: #7F3B06 /* #996633; *//* #CC6600; */
 }
 
 #content {
@@ -35,11 +35,11 @@ html {
 }
 
 body {
-  font-family: Andika, Sansita,  Tahoma, Verdana, Segoe, sans-serif;
+  font-family: Andika, Sansita, Tahoma, Verdana, Segoe, sans-serif;
 }
 
 main {
-  margin: 1.0em;
+  margin: 1em;
 }
 
 label {
@@ -59,11 +59,11 @@ label {
 }
 
 .headline-4 {
-  font-size: .75em;
+  font-size: 0.75em;
   font-weight: lighter;
 }
 .headline-5 {
-  font-size: 1.0em; /* 18px = 24px * .75 */
+  font-size: 1em; /* 18px = 24px * .75 */
   font-weight: bold;
   margin-bottom: 1em;
 }
@@ -87,7 +87,7 @@ input {
   background-color: #99CC99;
   color: #003300;
   border: 0;
-  padding: 1.0em;
+  padding: 1em;
   border-radius: 0.5em;
 }
 
@@ -119,6 +119,11 @@ li[id^="input"] {
   font-weight: bold;
 }
 
+.river-name::before {
+  content: "<<";
+  color: blue;
+}
+
 .river-info,
 .day {
   display: block;
@@ -129,11 +134,6 @@ li[id^="input"] {
   clear: left;
 }
 
-
-.river-definition:hover {
-  color: #CC9966;
-}
-
 .day,
 .river-name,
 .river-definition {
@@ -142,14 +142,15 @@ li[id^="input"] {
   margin-top: 0.5em;
 }
 
-/*.for-background {
-  display: none;
-}*/
+.river-definition:hover {
+  color: #CC9966;
+  font-weight: bolder;
+}
 
 .river-description {
   display: none;
   margin-top: 0.75em;
-  color:  #CC9966; /*#9999CC;  #D47D00; */
+  color: #CC9966; /*#9999CC;  #D47D00; */
   margin-left: 1em;
 }
 
@@ -159,7 +160,7 @@ li[id^="input"] {
 }
 
 .river-link {
-  margin-top: 1.0em;
+  margin-top: 1em;
   align-content: left;
 }
 
@@ -171,7 +172,7 @@ li[id^="input"] {
 .citation {
   clear: both;
   margin-top: 2em;
-  font-size: .75em;
+  font-size: 0.75em;
   font-weight: lighter;
 }
 
@@ -209,6 +210,15 @@ a:visited {
 
 /* ===== STATE STYLES ===== */
 /* media queries, state ex. nojs (has is (isActive, Inactive)) */
+.hasjs input[type="submit"] {
+  position: absolute;
+  left: -100000px;
+}
+
+.hasjs input[type="submit"].active {
+  position: static;
+  /*position: relative;*/
+}
 
 
 /* 450 @ 16px/em (28.125em) */
@@ -221,9 +231,9 @@ a:visited {
 
   label,
   input {
-  margin-left: 12.5%;
-  margin-right: 12.5%;
-  width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    width: 75%;
   }
 
 }
@@ -263,22 +273,23 @@ a:visited {
 /* 1000 @ 16px/em (62.5em) */
 @media screen and (min-width: 62.5em) {
 
-  label,
+/*  label,
   input {
-    border-right: 30%;
-    border-left: 30%;
+    border-right-width: 30%;
+    border-left-width: 30%;
 
-  }
+  }*/
+  #river-sections {
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+}
 
   /*#headlines {*/
     /*font-size: 1.5em;*/ /* 24px = 2.5 * 16px */
     /*line-height: 1.5em; *//* 36px = 24px * 1.5 */
   /*}*/
-
-  #river-sections {
-    margin-right: 20%;
-    margin-left: 20%;
-}
 
 /* 1100 @ 16px/em (68.75em) */
 @media screen and (min-width: 68.75em) {
