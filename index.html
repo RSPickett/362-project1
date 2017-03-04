@@ -25,7 +25,7 @@
     </figure>
   </header>
   <main id="content">
-    <form action="#null" name="signup" method="get">
+    <form action="#null" id="signup" name="signup" method="get" autocomplete="off">
       <ul id="headlines">
         <li class="headline-1">Southeastern Kayaking</li>
         <li class="headline-2">Spring break 2017</li>
@@ -40,7 +40,7 @@
         </li>
         <li  id="input-tel">
           <label for="tel">Phone Number</label>
-          <input type="tel" name="tel" id="tel" pattern="[0-9]" />
+          <input type="tel" name="tel" id="tel" pattern='^[0|1]?\d{10}$' placeholder="ex: 1234567890" />
         </li>
         <li id="input-email">
           <label for="email">Email</label>
@@ -49,9 +49,13 @@
         <li id="input-submit">
           <input type="submit" name="submit" id="submit" value="Join Us!"/>
         </li>
+        <li>
+
+        </li>
       </ol>
     </form>
     <ul id="dates">
+      <li id="response"></li>
       <li>Spend 5 days kayaking some of the southeast's best rivers</li>
       <li id="days">March 13-17</li>
     </ul>
@@ -117,11 +121,10 @@
         </dl>
     </section>
 
-    <div class="citation" >
-      <a href="http://www.americanwhitewater.org" class="text-link" target="_blank">All river descriptions from americanwhitewater.org</a>
-    </div>
+    <ul class="citation">
+      <li><a href="http://www.americanwhitewater.org" class="text-link" target="_blank">All river descriptions from americanwhitewater.org</a></li>
+    </ul>
 
-<!--     <p id="quote">We forget that the water cycle and the life cycle are one. - Jacques Cousteau</p> -->
 </main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="script/site.js"></script>
