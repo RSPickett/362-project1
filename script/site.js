@@ -28,7 +28,7 @@ $(function () {
   $('#signup').on('submit', function(event) {
     var name = $('#name').val();
     $('#response').append('Thank you ' + name + '.  We will be contacting you soon');
-    $('email').val = "";
+    this.reset();
     event.preventDefault();
-  })
+  });
 });
