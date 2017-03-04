@@ -20,24 +20,15 @@ $(function () {
     console.log(currentValue, validPattern);
     if(currentValue.match(validPattern)) {
       $('#submit').addClass('active');
-      console.log("true");
     } else {
       $('#submit').removeClass('active');
-      console.log("false");
     }
   });
+
+  $('#signup').on('submit', function(event) {
+    var name = $('#name').val();
+    $('#response').append('Thank you ' + name + '.  We will be contacting you soon');
+    $('email').val = "";
+    event.preventDefault();
+  })
 });
-
-// Tell jQuery to give up the dollar sign
-// $.noConflict();
-// Instead, use a self-invoking function to have a private
-// dollar sign
-// (function($){
-//   $(document).ready(
-//     function() {
-//       $('html').removeClass('nojs');
-//       $('html').addClass('hasjs');
-//     }
-//   );
-// })(jQuery);
-
