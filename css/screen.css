@@ -111,6 +111,12 @@ li[id^="input"] {
   font-size: 1.25em;
 }
 
+#response {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  color: #B56E95;
+}
+
 
 /*river description styling*/
 
