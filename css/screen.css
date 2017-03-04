@@ -119,9 +119,9 @@ li[id^="input"] {
   font-weight: bold;
 }
 
-.river-name::before {
-  content: "<<";
-  color: blue;
+.river-name::after {
+  content: " ...";
+  /*color: blue;*/
 }
 
 .river-info,
@@ -173,6 +173,7 @@ li[id^="input"] {
   clear: both;
   margin-top: 2em;
   font-size: 0.75em;
+  line-height: 1.20em;
   font-weight: lighter;
 }
 
@@ -203,9 +204,6 @@ a:visited {
 
 /* ===== MODULAR STYLES ===== */
 /* examples: rounded corners, red background, shadow, usually class selectors */
-/*form li {
-  margin-bottom: 1em;
-}*/
 
 
 /* ===== STATE STYLES ===== */
